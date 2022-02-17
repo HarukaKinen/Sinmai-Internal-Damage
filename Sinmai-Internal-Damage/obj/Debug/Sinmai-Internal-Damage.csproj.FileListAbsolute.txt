@@ -1,0 +1,17 @@
+D:\Source\Sinmai-Internal-Damage\Sinmai-Internal-Damage\bin\Debug\Sinmai-Internal-Damage.dll
+D:\Source\Sinmai-Internal-Damage\Sinmai-Internal-Damage\bin\Debug\Sinmai-Internal-Damage.pdb
+D:\Source\Sinmai-Internal-Damage\Sinmai-Internal-Damage\bin\Debug\Assembly-CSharp-firstpass.dll
+D:\Source\Sinmai-Internal-Damage\Sinmai-Internal-Damage\bin\Debug\Assembly-CSharp.dll
+D:\Source\Sinmai-Internal-Damage\Sinmai-Internal-Damage\bin\Debug\Mono.Security.dll
+D:\Source\Sinmai-Internal-Damage\Sinmai-Internal-Damage\bin\Debug\UnityEngine.dll
+D:\Source\Sinmai-Internal-Damage\Sinmai-Internal-Damage\bin\Debug\UnityEngine.Networking.dll
+D:\Source\Sinmai-Internal-Damage\Sinmai-Internal-Damage\bin\Debug\UnityEngine.UI.dll
+D:\Source\Sinmai-Internal-Damage\Sinmai-Internal-Damage\obj\Debug\Sinmai-Internal-Damage.csproj.CoreCompileInputs.cache
+D:\Source\Sinmai-Internal-Damage\Sinmai-Internal-Damage\obj\Debug\Sinmai-Internal-Damage.csproj.CopyComplete
+D:\Source\Sinmai-Internal-Damage\Sinmai-Internal-Damage\obj\Debug\Sinmai-Internal-Damage.dll
+D:\Source\Sinmai-Internal-Damage\Sinmai-Internal-Damage\obj\Debug\Sinmai-Internal-Damage.pdb
+D:\Source\Sinmai-Internal-Damage\Sinmai-Internal-Damage\bin\Debug\Assembly-UnityScript-firstpass.dll
+D:\Source\Sinmai-Internal-Damage\Sinmai-Internal-Damage\bin\Debug\Assembly-UnityScript.dll
+D:\Source\Sinmai-Internal-Damage\Sinmai-Internal-Damage\bin\Debug\Boo.Lang.dll
+D:\Source\Sinmai-Internal-Damage\Sinmai-Internal-Damage\bin\Debug\GalaxyCSharp.dll
+D:\Source\Sinmai-Internal-Damage\Sinmai-Internal-Damage\bin\Debug\UnityScript.Lang.dll
