@@ -68,6 +68,8 @@ namespace Sinmai.Functions
         {
             if (!Settings.RateCheckBox) return;
 
+
+            // GameObject 必须在 Feature 激活后调用来避免函数外迴圈
             UserInformationController lUserInformationController = GameObject
                 .Find("LeftMonitor/CommonProcess(Clone)/RearCanvas/Sub/UI_UserInformation/UI_UserData/")
                 .GetComponent<UserInformationController>();
