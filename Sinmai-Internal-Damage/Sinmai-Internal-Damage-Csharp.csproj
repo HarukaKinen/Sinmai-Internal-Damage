@@ -258,6 +258,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Functions\Sounds.cs" />
     <Compile Include="Functions\Timer.cs" />
     <Compile Include="Functions\Skins.cs" />
     <Compile Include="Loader.cs" />

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Sinmai.Functions;
+using UnityEngine;
 
 /*
  * SharpMonoInjectInfo:
@@ -21,6 +22,8 @@ namespace Sinmai
             Load.AddComponent<UI.Menu>();
 
             Object.DontDestroyOnLoad(Load);
+            
+            Sounds.InjectSound();
         }
 
         public static void Unload()
