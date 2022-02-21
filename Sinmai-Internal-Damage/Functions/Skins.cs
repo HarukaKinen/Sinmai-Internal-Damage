@@ -13,14 +13,6 @@ namespace Sinmai.Functions
         private static readonly BindingFlags iBindFlags = BindingFlags.Instance;
         private static readonly BindingFlags sBindFlags = BindingFlags.Static;
 
-        private static UserInformationController lUserInformationController = GameObject
-            .Find("LeftMonitor/CommonProcess(Clone)/RearCanvas/Sub/UI_UserInformation/UI_UserData/")
-            .GetComponent<UserInformationController>();
-
-        private static UserInformationController rUserInformationController = GameObject
-            .Find("RightMonitor/CommonProcess(Clone)/RearCanvas/Sub/UI_UserInformation/UI_UserData/")
-            .GetComponent<UserInformationController>();
-
         public static void GetTimer()
         {
             if (!Settings.CheckBox) return;
@@ -75,6 +67,14 @@ namespace Sinmai.Functions
         public static void RateChanger()
         {
             if (!Settings.RateCheckBox) return;
+
+            UserInformationController lUserInformationController = GameObject
+                .Find("LeftMonitor/CommonProcess(Clone)/RearCanvas/Sub/UI_UserInformation/UI_UserData/")
+                .GetComponent<UserInformationController>();
+
+            UserInformationController rUserInformationController = GameObject
+                .Find("RightMonitor/CommonProcess(Clone)/RearCanvas/Sub/UI_UserInformation/UI_UserData/")
+                .GetComponent<UserInformationController>();
 
             var rate = uint.Parse(Settings.RatingValue, NumberStyles.Integer);
 
