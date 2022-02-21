@@ -269,6 +269,8 @@
     <Compile Include="Utils\Render.cs" />
     <Compile Include="UI\Settings.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="README.md" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
