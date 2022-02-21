@@ -27,5 +27,11 @@ namespace Sinmai.Functions
             //     Render.DrawString(new Vector2(200, 270), freedomTime.GetValue(null).ToString(), false);
         }
 
+        public static void InfinityPrepareTime()
+        {
+            if (!Settings.InfinityFreedomTimeCheckBox)
+                return;
+        }
+
     }
 }

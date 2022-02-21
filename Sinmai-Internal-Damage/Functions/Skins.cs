@@ -1,4 +1,5 @@
-﻿using System.Globalization;
+﻿using System;
+using System.Globalization;
 using System.Reflection;
 using Manager;
 using Sinmai.Helper;
@@ -8,12 +9,11 @@ namespace Sinmai.Functions
 {
     public class Skins
     {
-        private static readonly BindingFlags BindFlags = BindingFlags.NonPublic | BindingFlags.Instance;
-        private static readonly BindingFlags pBindFlags = BindingFlags.NonPublic;
-        private static readonly BindingFlags iBindFlags = BindingFlags.Instance;
-        private static readonly BindingFlags sBindFlags = BindingFlags.Static;
+        private const BindingFlags pBindFlags = BindingFlags.NonPublic;
+        private const BindingFlags iBindFlags = BindingFlags.Instance;
+        private const BindingFlags sBindFlags = BindingFlags.Static;
 
-        public static void GetTimer()
+        /*public static void GetTimer()
         {
             if (!Settings.CheckBox) return;
             Render.DrawString(new Vector2(200, 210), "CheckBox Checked", false);
@@ -26,12 +26,12 @@ namespace Sinmai.Functions
             if (lCommonTimer != null)
             {
                 var commonTimerType = typeof(TimerController);
-                var countDownSecond = commonTimerType.GetField("_countDownSecond", BindFlags);
+                var countDownSecond = commonTimerType.GetField("_countDownSecond", pBindFlags | iBindFlags);
                 Render.DrawString(new Vector2(200, 240), countDownSecond.GetValue(commonTimerType).ToString(),
                     false);
 
 
-                /*// 获取左屏幕的GenericProcess
+                /#1#/ 获取左屏幕的GenericProcess
                     var lGenericProcess = GameObject.Find("LeftMonitor/GenericProcess(Clone)").GetComponent<GenericProcess>();
                     // 定义GenericProcess的type
                     Type genericProcessType = typeof(GenericProcess);
@@ -45,8 +45,11 @@ namespace Sinmai.Functions
                     FieldInfo leftMonitorTimerControllerFi = leftMonitorTimerControllerType.GetField("_countDownSecond", BindFlags);
                     // 修改 TimerController array 的值
                     leftMonitorTimerControllerFi.SetValue(timerController, 99U);
-
-                    _timerController.SetValue(lGenericProcess, timerController);*/
+                    
+                    // 操你妈 没几把用
+                    
+                    
+                    _timerController.SetValue(lGenericProcess, timerController);#1#
             }
             else
             {
@@ -57,8 +60,8 @@ namespace Sinmai.Functions
                 if(Timer)
                     Render.DrawString(new Vector2(200, 210), Timer.ToString(), false);
                 else
-                    Render.DrawString(new Vector2(200, 210), "null object", false);*/
-        }
+                    Render.DrawString(new Vector2(200, 210), "null object", false);#1#
+        }*/
 
         public static void PlayerOneOnly()
         {
@@ -88,18 +91,29 @@ namespace Sinmai.Functions
 
         public static void UdemaeChanger()
         {
+            if (!Settings.UdemaeCheckBox) return;
+            
+            UserInformationController lUserInformationController = GameObject
+                .Find("LeftMonitor/CommonProcess(Clone)/RearCanvas/Sub/UI_UserInformation/UI_UserData/")
+                .GetComponent<UserInformationController>();
 
+            UserInformationController rUserInformationController = GameObject
+                .Find("RightMonitor/CommonProcess(Clone)/RearCanvas/Sub/UI_UserInformation/UI_UserData/")
+                .GetComponent<UserInformationController>();
+
+            int udemaeId = int.Parse(Settings.UdemaeValue);
+
+            var udemae = (UdemaeID) udemaeId;
+
+            if (lUserInformationController != null)
+            {
+                lUserInformationController.SetUdemae(udemae);
+            }
         }
 
         public static void ModifyVersionNum()
         {
-            if (!Settings.FrameCheckBox)
-                return;
-            // CommonTimer (Unity.GameObject)   
-            var UiFrame =
-                GameObject.Find(
-                    "LeftMonitor/CommonProcess(Clone)/RearCanvas/Sub/UI_UserInformation/UI_UserData/UI_User/IMG_Frame/");
-            Render.DrawString(new Vector2(200, 220), UiFrame.ToString(), false);
+
         }
     }
 }

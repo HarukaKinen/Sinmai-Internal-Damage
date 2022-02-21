@@ -258,9 +258,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Functions\AutoPlay.cs" />
     <Compile Include="Functions\Sounds.cs" />
     <Compile Include="Functions\Timer.cs" />
     <Compile Include="Functions\Skins.cs" />
+    <Compile Include="Functions\Track.cs" />
     <Compile Include="Loader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI\Menu.cs" />
