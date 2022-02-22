@@ -2,6 +2,8 @@
 
 A no hook internal cheat for maimai でらっくす (Sinmai.exe) using Mono Injection born out of learning C#.
 
+Thanks to my pro internal game hack developer friend for helping me with this.
+
 ![](https://cdn.discordapp.com/attachments/811170667793743902/945138544895225886/Snipaste_2022-02-21_09-59-47.png)
 
 ## Feature
