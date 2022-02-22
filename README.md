@@ -51,7 +51,8 @@ Thanks to my pro internal game hack developer friend for helping me with this.
 
 ## Credit / Useful Link
 
-* [A Beginner's Guide To Hacking Unity Games - UnKnoWnCheaTs](https://www.unknowncheats.me/wiki/A_Beginner%27s_Guide_To_Hacking_Unity_Games)
+* [A Beginner's Guide To Hacking Unity Games](https://www.unknowncheats.me/wiki/A_Beginner%27s_Guide_To_Hacking_Unity_Games) - UnKnoWnCheaTs
+* [How can I invoke private methods with mono injected assembly](https://guidedhacking.com/threads/how-can-i-invoke-private-methods-with-mono-injected-assembly.14389/) - Guided Hacking
 * [LavaGang/MelonLoader](https://github.com/LavaGang/MelonLoader)
   * [sinai-dev/UnityExplorer](https://github.com/sinai-dev/UnityExplorer) for MelonLoader.Mono
-* [SharpMonoInjector v2.4 by wh0am15533 - UnKnoWnCheaTs](https://www.unknowncheats.me/forum/unity/408878-sharpmonoinjector-fixed-updated.html)
+* [SharpMonoInjector v2.4 by wh0am15533](https://www.unknowncheats.me/forum/unity/408878-sharpmonoinjector-fixed-updated.html) - UnKnoWnCheaTs
