@@ -4,7 +4,7 @@ A no hook internal cheat for maimai でらっくす (Sinmai.exe) using Mono Inje
 
 ![](https://cdn.discordapp.com/attachments/811170667793743902/945138544895225886/Snipaste_2022-02-21_09-59-47.png)
 
-## Feature
+## 功能 (Feature)
 
 - Legit
   - Legit AutoPlay
@@ -18,33 +18,34 @@ A no hook internal cheat for maimai でらっくす (Sinmai.exe) using Mono Inje
 - Misc
   - Infinity FreedomTime
 
-## Compatibility
+## 兼容性 (Compatibility)
 
-### Tested
-- SDEZ (maimai でらっくす)
-  - 1.16 (Splash)
-
-### Technically feasible, but not Tested
+### 已测试 (Tested)
 - SDEZ (maimai でらっくす)
   - 1.20 (UNiVERSE)
-  - 1.17 (Splash PLUS) and below
+  - 1.17 (Splash PLUS)
+  - 1.16 (Splash)
+
+### 未测试但技术上支持 (Technically feasible, but not Tested)
+- SDEZ (maimai でらっくす)
+  - 1.12 (無印 PLUS) and below
 - SDGA (maimai DX)
 - SDGB (舞萌DX)
 
 ## Detection
 
-### Tested and detected
+### Detected
 
 - はるか (Haruka Hong Kong)
 
-### Tested and undetected
+### Undetected
 
 - MiniMe (unknown SDEZ fork)
 - Aqua Server 0.0.18 above
 
 ### non-Tested but possible undetected
 
-- ALL.Net (Amusement Linkage Live Network)
+- SEGA ALL.Net (Amusement Linkage Live Network)
 
 ## Credit / Useful Link
 
