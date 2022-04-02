@@ -27,12 +27,13 @@ Thanks to my pro internal game hack developer friend for helping me with this.
   - 1.20 (UNiVERSE)
   - 1.17 (Splash PLUS)
   - 1.16 (Splash)
+- SDGB (舞萌DX)
+  - 1.10 (舞萌DX 2021)
 
 ### Technically feasible, but not Tested
 - SDEZ (maimai でらっくす)
   - 1.12 (無印 PLUS) and below
 - SDGA (maimai DX)
-- SDGB (舞萌DX)
 
 ## Detection
 
