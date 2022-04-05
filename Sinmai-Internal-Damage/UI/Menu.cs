@@ -28,7 +28,7 @@ namespace Sinmai.UI
             if (MenuToggle)
                 Window = GUILayout.Window(0, Window, RenderMenu, "Internal Damage for Sinmai");
             Render.DrawString(new Vector2(200, 185), "Sinmai-Internal-Damage");
-            Render.DrawString(new Vector2(200, 200), "Build: b20220121-G");
+            Render.DrawString(new Vector2(200, 200), "Build: b20220405-A");
 
             // Call Functions in Functions
             // what the fuck is this named

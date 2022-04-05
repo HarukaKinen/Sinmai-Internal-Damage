@@ -62,6 +62,15 @@ namespace Sinmai.Functions
                 else
                     Render.DrawString(new Vector2(200, 210), "null object", false);#1#
         }*/
+        private static UserInformationController getUserInformationController()
+        {
+            UserInformationController UserInformationController = GameObject
+                .Find("Sub/UI_UserInformation/UI_UserData/")
+                .GetComponent<UserInformationController>();
+
+            return UserInformationController;
+        }
+
 
         public static void PlayerOneOnly()
         {
@@ -71,43 +80,29 @@ namespace Sinmai.Functions
         {
             if (!Settings.RateCheckBox) return;
 
-
-            // GameObject 必须在 Feature 激活后调用来避免函数外迴圈
-            UserInformationController lUserInformationController = GameObject
-                .Find("LeftMonitor/CommonProcess(Clone)/RearCanvas/Sub/UI_UserInformation/UI_UserData/")
-                .GetComponent<UserInformationController>();
-
-            UserInformationController rUserInformationController = GameObject
-                .Find("RightMonitor/CommonProcess(Clone)/RearCanvas/Sub/UI_UserInformation/UI_UserData/")
-                .GetComponent<UserInformationController>();
+            UserInformationController UserInformationController = getUserInformationController();
 
             var rate = uint.Parse(Settings.RatingValue, NumberStyles.Integer);
 
-            if (lUserInformationController != null)
+            if (UserInformationController != null)
             {
-                lUserInformationController.SetUserRating(rate);
+                UserInformationController.SetUserRating(rate);
             }
         }
 
         public static void UdemaeChanger()
         {
             if (!Settings.UdemaeCheckBox) return;
-            
-            UserInformationController lUserInformationController = GameObject
-                .Find("LeftMonitor/CommonProcess(Clone)/RearCanvas/Sub/UI_UserInformation/UI_UserData/")
-                .GetComponent<UserInformationController>();
 
-            UserInformationController rUserInformationController = GameObject
-                .Find("RightMonitor/CommonProcess(Clone)/RearCanvas/Sub/UI_UserInformation/UI_UserData/")
-                .GetComponent<UserInformationController>();
+            UserInformationController UserInformationController = getUserInformationController();
 
             int udemaeId = int.Parse(Settings.UdemaeValue);
 
             var udemae = (UdemaeID) udemaeId;
 
-            if (lUserInformationController != null)
+            if (UserInformationController != null)
             {
-                lUserInformationController.SetUdemae(udemae);
+                UserInformationController.SetUdemae(udemae);
             }
         }
 
