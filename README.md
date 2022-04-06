@@ -22,19 +22,23 @@ Thanks to my pro internal game hack developer friend for helping me with this.
 
 ## Compatibility
 
-### Supported
+### Tested
 - SDEZ (maimai でらっくす)
   - 1.20 (UNiVERSE)
   - 1.17 (Splash PLUS)
-  - 1.16 (Splash)
+  - 1.10 (Splash)
 - SDGB (舞萌DX)
   - 1.01 (无印)
   - 1.11 (2021)
+- SDGA (maimai DX)
+  - 1.01 (無印)
 
 ### Technically feasible, but not Tested
 - SDEZ (maimai でらっくす)
-  - 1.12 (無印 PLUS) and below
+  - 1.109 (無印 PLUS)
+  - 1.00 (無印)
 - SDGA (maimai DX)
+  - All versions
 
 ## Detection
 
