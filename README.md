@@ -28,7 +28,8 @@ Thanks to my pro internal game hack developer friend for helping me with this.
   - 1.17 (Splash PLUS)
   - 1.16 (Splash)
 - SDGB (舞萌DX)
-  - 1.10 (舞萌DX 2021)
+  - 1.01 (无印)
+  - 1.11 (2021)
 
 ### Technically feasible, but not Tested
 - SDEZ (maimai でらっくす)
