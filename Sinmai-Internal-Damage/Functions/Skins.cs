@@ -6,6 +6,7 @@ using System.Globalization;
 using System.Reflection;
 using UnityEngine;
 
+
 namespace Sinmai.Functions
 {
     public class Skins
@@ -14,9 +15,12 @@ namespace Sinmai.Functions
         private const BindingFlags iBindFlags = BindingFlags.Instance;
         private const BindingFlags sBindFlags = BindingFlags.Static;
 
-        public static TitleData title = GetTitle(int.Parse(Settings.TitleValueOriginal));
+        public static TitleData title = GetTitle(int.Parse(Settings.TitleIndexOriginal));
 
         public static Sprite titleBg = Resources.Load<Sprite>("Process/Common/Sprites/UpperMonitor/UI_CMN_Shougou_" + Settings.TitleType);
+        public static Sprite pass = Resources.Load<Sprite>("Process/Common/Sprites/UpperMonitor/UI_CMN_DXPass_" + Settings.DXPassType);
+        public static string userName = Settings.NameValue;
+        
         private static UserInformationController getUserInformationController()
         {
             UserInformationController UserInformationController = GameObject
@@ -26,9 +30,17 @@ namespace Sinmai.Functions
             return UserInformationController;
         }
 
-        public static void PlayerOneOnly()
-        {
-        }
+        // public static void NameChanger()
+        // {
+        //     if (!Settings.NameCheckBox) return;
+        //
+        //     UserInformationController UserInformationController = getUserInformationController();
+        //
+        //     if (UserInformationController != null)
+        //     {
+        //         UserInformationController.userNameText.text = userName;
+        //     }
+        // }
 
         public static void RateChanger()
         {
@@ -50,13 +62,41 @@ namespace Sinmai.Functions
 
             UserInformationController UserInformationController = getUserInformationController();
 
-            int udemaeId = int.Parse(Settings.UdemaeValue);
+            int udemaeId = int.Parse(Settings.UdemaeIndex);
 
             var udemae = (UdemaeID)udemaeId;
 
             if (UserInformationController != null)
             {
                 UserInformationController.SetUdemae(udemae);
+            }
+        }
+
+        public static void IconChanger()
+        {
+            if (!Settings.IconCheckBox) return;
+
+            UserInformationController UserInformationController = getUserInformationController();
+
+            Texture2D iconTexture2D = AssetManager.Instance().GetIconTexture2D(0, int.Parse(Settings.IconIndex));
+
+            if (UserInformationController != null)
+            {
+                UserInformationController.SetUserIcon(iconTexture2D);
+            }
+        }
+
+        public static void PlateChanger()
+        {
+            if (!Settings.PlateCheckBox) return;
+
+            UserInformationController UserInformationController = getUserInformationController();
+
+            Texture2D plateTexture2D = AssetManager.Instance().GetPlateTexture2D(int.Parse(Settings.PlateIndex));
+
+            if (UserInformationController != null)
+            {
+                UserInformationController.SetNamePlate(plateTexture2D);
             }
         }
 
@@ -75,9 +115,21 @@ namespace Sinmai.Functions
                 }
                 else if (Settings.TitleMethodInt == 1)
                 {
-                    UserInformationController.SetTitle(Settings.TitleValueCustom, titleBg);
+                    UserInformationController.SetTitle(Settings.TitleIndexCustom, titleBg);
                 }
 
+            }
+        }
+
+        public static void DXPassChanger()
+        {
+            if (!Settings.DXPassCheckBox) return;
+
+            UserInformationController UserInformationController = getUserInformationController();
+
+            if (UserInformationController != null)
+            {
+                UserInformationController.SetPass(pass);
             }
         }
 

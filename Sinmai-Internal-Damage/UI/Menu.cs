@@ -27,14 +27,17 @@ namespace Sinmai.UI
             if (MenuToggle)
                 Window = GUILayout.Window(0, Window, RenderMenu, "Internal Damage for Sinmai");
             Render.DrawString(new Vector2(100, 170), "Sinmai-Internal-Damage");
-            Render.DrawString(new Vector2(100, 185), "Local Client: " + Functions.Version.CheckClientVersion());
-            Render.DrawString(new Vector2(100, 200), "Build: b20220406-C");
+            Render.DrawString(new Vector2(100, 185), $"Local Client: {Functions.Version.CheckClientVersion()}");
+            Render.DrawString(new Vector2(100, 200), $"Build: {Settings.Version}");
 
             // Call Functions in Functions
             // what the fuck is this named
             Skins.RateChanger();
             Skins.UdemaeChanger();
+            Skins.IconChanger();
+            Skins.PlateChanger();
             Skins.TitleChanger();
+            Skins.DXPassChanger();
 
             Timer.InfinityFreedomTime();
             Timer.InfinityPrepareTime();
@@ -97,20 +100,41 @@ namespace Sinmai.UI
                             GUILayout.BeginVertical("Skins");
                             // Skin Changer
                             GUILayout.Label("Skin Changer");
+                            // Settings.NameCheckBox = GUILayout.Toggle(Settings.NameCheckBox, "Name Changer");
+                            // if (Settings.NameCheckBox)
+                            // {
+                            //     GUILayout.Label("Rating:");
+                            //     Settings.NameValue = GUILayout.TextField(Settings.NameValue, 5);
+                            //     GUILayout.Space(10);
+                            // }
                             Settings.RateCheckBox = GUILayout.Toggle(Settings.RateCheckBox, "でらっくす Rating");
                             if (Settings.RateCheckBox)
                             {
                                 GUILayout.Label("Rating:");
                                 Settings.RatingValue = GUILayout.TextField(Settings.RatingValue, 5);
+                                GUILayout.Space(10);
                             }
                             Settings.UdemaeCheckBox = GUILayout.Toggle(Settings.UdemaeCheckBox, "段位認定");
                             if (Settings.UdemaeCheckBox)
                             {
                                 GUILayout.Label("Index:");
-                                Settings.UdemaeValue = GUILayout.TextField(Settings.UdemaeValue, 2);
+                                Settings.UdemaeIndex = GUILayout.TextField(Settings.UdemaeIndex, 2);
+                                GUILayout.Space(10);
+                            }
+                            Settings.IconCheckBox = GUILayout.Toggle(Settings.IconCheckBox, "Icon");
+                            if (Settings.IconCheckBox)
+                            {
+                                GUILayout.Label("Index:");
+                                Settings.IconIndex = GUILayout.TextField(Settings.IconIndex, 6);
+                                GUILayout.Space(10);
                             }
                             Settings.PlateCheckBox = GUILayout.Toggle(Settings.PlateCheckBox, "Plate");
-                            Settings.FrameCheckBox = GUILayout.Toggle(Settings.FrameCheckBox, "Frame");
+                            if (Settings.PlateCheckBox)
+                            {
+                                GUILayout.Label("Index:");
+                                Settings.PlateIndex = GUILayout.TextField(Settings.PlateIndex, 6);
+                                GUILayout.Space(10);
+                            }
                             Settings.TitleCheckBox = GUILayout.Toggle(Settings.TitleCheckBox, "Title");
                             if (Settings.TitleCheckBox)
                             {
@@ -120,22 +144,29 @@ namespace Sinmai.UI
                                 {
                                     case 0:
                                         GUILayout.Label("Title index:");
-                                        Settings.TitleValueOriginal = GUILayout.TextField(Settings.TitleValueOriginal, 255);
+                                        Settings.TitleIndexOriginal = GUILayout.TextField(Settings.TitleIndexOriginal, 255);
                                         GUILayout.Label("Title type:");
                                         Settings.TitleType = GUILayout.TextField(Settings.TitleType, 7);
+                                        GUILayout.Space(10);
                                         break;
                                     case 1:
                                         GUILayout.Label("Title name:");
-                                        Settings.TitleValueCustom = GUILayout.TextField(Settings.TitleValueCustom, 255);
+                                        Settings.TitleIndexCustom = GUILayout.TextField(Settings.TitleIndexCustom, 255);
                                         GUILayout.Label("Title type:");
                                         Settings.TitleType = GUILayout.TextField(Settings.TitleType, 7);
-                                        break;
-                                    default:
+                                        GUILayout.Space(10);
                                         break;
                                 }
                             }
+                            Settings.FrameCheckBox = GUILayout.Toggle(Settings.FrameCheckBox, "Frame");
 
                             Settings.DXPassCheckBox = GUILayout.Toggle(Settings.DXPassCheckBox, "DX Pass");
+                            if (Settings.DXPassCheckBox)
+                            {
+                                GUILayout.Label("DXPass type:");
+                                Settings.DXPassType = GUILayout.TextField(Settings.DXPassType, 8);
+                                GUILayout.Space(10);
+                            }
                             GUILayout.EndVertical();
                             break;
                         case 2:
