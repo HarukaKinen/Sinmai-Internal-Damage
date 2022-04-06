@@ -2,6 +2,10 @@
 {
     class Settings
     {
+        public static int MainToolbarInt = 0;
+        public static string[] MainToolbarStrings = { "Legit", "Skins", "Misc" };
+
+
         // Legit Autoplay
         public static bool LegitAutoPlayCheckBox = false;
         public static int LegitMethodInt = 0;
@@ -31,6 +35,11 @@
         public static bool PlateCheckBox = false;
         public static bool FrameCheckBox = false;
         public static bool TitleCheckBox = false;
+        public static int TitleMethodInt = 0;
+        public static string[] TitleMethod = { "Original", "Custom" };
+        public static string TitleValueOriginal = "1";
+        public static string TitleValueCustom = "skeet.cc";
+        public static string TitleType = "Rainbow";
         public static bool DXPassCheckBox = false;
         
         // Misc

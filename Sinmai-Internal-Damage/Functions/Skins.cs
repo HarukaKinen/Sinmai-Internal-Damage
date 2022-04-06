@@ -1,8 +1,9 @@
-﻿using System;
+﻿using MAI2.Util;
+using Manager;
+using Manager.MaiStudio;
+using Sinmai.Helper;
 using System.Globalization;
 using System.Reflection;
-using Manager;
-using Sinmai.Helper;
 using UnityEngine;
 
 namespace Sinmai.Functions
@@ -13,55 +14,9 @@ namespace Sinmai.Functions
         private const BindingFlags iBindFlags = BindingFlags.Instance;
         private const BindingFlags sBindFlags = BindingFlags.Static;
 
-        /*public static void GetTimer()
-        {
-            if (!Settings.CheckBox) return;
-            Render.DrawString(new Vector2(200, 210), "CheckBox Checked", false);
+        public static TitleData title = GetTitle(int.Parse(Settings.TitleValueOriginal));
 
-            // CommonTimer (Unity.GameObject)   
-            var lCommonTimer = GameObject
-                .Find("LeftMonitor/GenericProcess(Clone)/Canvas/Main/UI_Timer/CommonTimer(Clone)")
-                .GetComponent<CommonTimer>();
-
-            if (lCommonTimer != null)
-            {
-                var commonTimerType = typeof(TimerController);
-                var countDownSecond = commonTimerType.GetField("_countDownSecond", pBindFlags | iBindFlags);
-                Render.DrawString(new Vector2(200, 240), countDownSecond.GetValue(commonTimerType).ToString(),
-                    false);
-
-
-                /#1#/ 获取左屏幕的GenericProcess
-                    var lGenericProcess = GameObject.Find("LeftMonitor/GenericProcess(Clone)").GetComponent<GenericProcess>();
-                    // 定义GenericProcess的type
-                    Type genericProcessType = typeof(GenericProcess);
-                    // 从GenericProcess里获取private field timerController
-                    FieldInfo _timerController = genericProcessType.GetField("_timerController", BindFlags);
-                    // 获取timerController的值 （array）
-                    TimerController timerController = _timerController?.GetValue(lGenericProcess) as TimerController;
-                    // 定义TimerController的Type
-                    Type leftMonitorTimerControllerType = typeof(TimerController);
-                    // 从TimerController类里拿private field countDownSecond
-                    FieldInfo leftMonitorTimerControllerFi = leftMonitorTimerControllerType.GetField("_countDownSecond", BindFlags);
-                    // 修改 TimerController array 的值
-                    leftMonitorTimerControllerFi.SetValue(timerController, 99U);
-                    
-                    // 操你妈 没几把用
-                    
-                    
-                    _timerController.SetValue(lGenericProcess, timerController);#1#
-            }
-            else
-            {
-                Render.DrawString(new Vector2(200, 240), "CommonTimer = null", false);
-            }
-
-            /*
-                if(Timer)
-                    Render.DrawString(new Vector2(200, 210), Timer.ToString(), false);
-                else
-                    Render.DrawString(new Vector2(200, 210), "null object", false);#1#
-        }*/
+        public static Sprite titleBg = Resources.Load<Sprite>("Process/Common/Sprites/UpperMonitor/UI_CMN_Shougou_" + Settings.TitleType);
         private static UserInformationController getUserInformationController()
         {
             UserInformationController UserInformationController = GameObject
@@ -70,7 +25,6 @@ namespace Sinmai.Functions
 
             return UserInformationController;
         }
-
 
         public static void PlayerOneOnly()
         {
@@ -98,7 +52,7 @@ namespace Sinmai.Functions
 
             int udemaeId = int.Parse(Settings.UdemaeValue);
 
-            var udemae = (UdemaeID) udemaeId;
+            var udemae = (UdemaeID)udemaeId;
 
             if (UserInformationController != null)
             {
@@ -106,9 +60,30 @@ namespace Sinmai.Functions
             }
         }
 
-        public static void ModifyVersionNum()
+        public static void TitleChanger()
         {
+            if (!Settings.TitleCheckBox) return;
 
+            UserInformationController UserInformationController = getUserInformationController();
+
+            if (UserInformationController != null)
+            {
+                //TitleData title = GetTitle(int.Parse(Settings.TitleValueOriginal));
+                if (Settings.TitleMethodInt == 0)
+                {
+                    UserInformationController.SetTitle(title.name.str, titleBg);
+                }
+                else if (Settings.TitleMethodInt == 1)
+                {
+                    UserInformationController.SetTitle(Settings.TitleValueCustom, titleBg);
+                }
+
+            }
+        }
+
+        public static TitleData GetTitle(int id)
+        {
+            return Singleton<DataManager>.Instance.GetTitle(id);
         }
     }
 }

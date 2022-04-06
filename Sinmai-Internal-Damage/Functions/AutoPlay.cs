@@ -1,7 +1,5 @@
-﻿using System;
-using Manager;
+﻿using Manager;
 using Sinmai.Helper;
-using UnityEngine;
 using Random = System.Random;
 
 namespace Sinmai.Functions
@@ -28,12 +26,12 @@ namespace Sinmai.Functions
         {
             return rand.Next(0, 4);
         }
-        
+
         // Opposite 按顺序随机概率
         public static void Opposite()
         {
             float cent = CalcCent();
-            
+
             /*Render.DrawString(new Vector2(200, 260), GameManager.AutoPlay.ToString(), false);
             Render.DrawString(new Vector2(200, 280), Settings.CriticalValue.ToString(), false);
             Render.DrawString(new Vector2(200, 290), Settings.PerfectValue.ToString(), false);
@@ -85,7 +83,7 @@ namespace Sinmai.Functions
 
             }
         }
-        
+
         // Random Cycle 随机迴圈
         public static void RandomCycle()
         {
@@ -104,7 +102,7 @@ namespace Sinmai.Functions
                             GameManager.AutoPlay = GameManager.AutoPlayMode.Critical;
                         }
                         break;
-                    case 1:                       
+                    case 1:
                         if (Settings.PerfectValue != 0.0f && cent <= Settings.PerfectValue)
                         {
                             GameManager.AutoPlay = GameManager.AutoPlayMode.Perfect;
@@ -116,7 +114,7 @@ namespace Sinmai.Functions
                             GameManager.AutoPlay = GameManager.AutoPlayMode.Great;
                         }
                         break;
-                    case 3:                       
+                    case 3:
                         if (Settings.GoodValue != 0.0f && cent <= Settings.GoodValue)
                         {
                             GameManager.AutoPlay = GameManager.AutoPlayMode.Good;
@@ -134,7 +132,7 @@ namespace Sinmai.Functions
                 }
             }
         }
-        
+
         // 无概率强制随机
         public static void Force()
         {
