@@ -6,6 +6,35 @@ Thanks to my pro internal game hack developer friend for helping me with this.
 
 ![](https://cdn.discordapp.com/attachments/811170667793743902/945138544895225886/Snipaste_2022-02-21_09-59-47.png)
 
+## Compatibility
+
+### Supported base
+
+- 20000
+- 20500
+- 21000
+- 21500
+- 22000
+- 22500 (Not tested)
+
+### Tested
+- SDEZ (maimai でらっくす)
+  - 1.20 (UNiVERSE)
+  - 1.17 (Splash PLUS)
+  - 1.10 (Splash)
+- SDGB (舞萌DX)
+  - 1.11 (2021)
+  - 1.01 (无印)
+- SDGA (maimai DX)
+  - 1.01 (無印)
+
+### Technically feasible, but not Tested
+- SDEZ (maimai でらっくす)
+  - 1.09 (無印 PLUS)
+  - 1.00 (無印)
+- SDGA (maimai DX)
+  - All versions
+
 ## Feature
 
 - Legit
@@ -19,26 +48,6 @@ Thanks to my pro internal game hack developer friend for helping me with this.
   - Udemae
 - Misc
   - Infinity FreedomTime
-
-## Compatibility
-
-### Tested
-- SDEZ (maimai でらっくす)
-  - 1.20 (UNiVERSE)
-  - 1.17 (Splash PLUS)
-  - 1.10 (Splash)
-- SDGB (舞萌DX)
-  - 1.01 (无印)
-  - 1.11 (2021)
-- SDGA (maimai DX)
-  - 1.01 (無印)
-
-### Technically feasible, but not Tested
-- SDEZ (maimai でらっくす)
-  - 1.09 (無印 PLUS)
-  - 1.00 (無印)
-- SDGA (maimai DX)
-  - All versions
 
 ## Detection
 
