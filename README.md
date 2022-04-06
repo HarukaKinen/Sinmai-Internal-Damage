@@ -35,7 +35,7 @@ Thanks to my pro internal game hack developer friend for helping me with this.
 
 ### Technically feasible, but not Tested
 - SDEZ (maimai でらっくす)
-  - 1.109 (無印 PLUS)
+  - 1.09 (無印 PLUS)
   - 1.00 (無印)
 - SDGA (maimai DX)
   - All versions
