@@ -46,6 +46,10 @@ Thanks to my pro internal game hack developer friend for helping me with this.
 - Skin Changer
   - DX Rating
   - Udemae
+  - Icon
+  - Plate
+  - Title
+  - DX Pass 
 - Misc
   - Infinity FreedomTime
 
