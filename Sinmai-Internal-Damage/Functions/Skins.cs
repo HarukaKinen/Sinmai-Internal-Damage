@@ -1,4 +1,5 @@
-﻿using MAI2.Util;
+﻿using System;
+using MAI2.Util;
 using Manager;
 using Manager.MaiStudio;
 using Sinmai.Helper;
@@ -108,7 +109,6 @@ namespace Sinmai.Functions
 
             if (UserInformationController != null)
             {
-                //TitleData title = GetTitle(int.Parse(Settings.TitleValueOriginal));
                 if (Settings.TitleMethodInt == 0)
                 {
                     UserInformationController.SetTitle(title.name.str, titleBg);
