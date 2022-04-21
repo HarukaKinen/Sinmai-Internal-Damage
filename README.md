@@ -1,5 +1,7 @@
 ﻿# Internal-Damage
 
+***This is a cheat, using by your own risk.***
+
 A no hook internal cheat for maimai でらっくす (Sinmai.exe) using Mono Injection born out of learning C#.
 
 Thanks to my pro internal game hack developer friend for helping me with this.
@@ -54,10 +56,6 @@ Thanks to my pro internal game hack developer friend for helping me with this.
   - Infinity FreedomTime
 
 ## Detection
-
-### Detected
-
-- はるか (Haruka Hong Kong)
 
 ### Undetected
 
