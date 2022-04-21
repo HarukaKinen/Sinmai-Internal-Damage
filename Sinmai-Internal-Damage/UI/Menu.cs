@@ -26,9 +26,8 @@ namespace Sinmai.UI
             // Draw ur epic hek here
             if (MenuToggle)
                 Window = GUILayout.Window(0, Window, RenderMenu, "Internal Damage for Sinmai");
-            Render.DrawString(new Vector2(100, 170), "Sinmai-Internal-Damage");
-            Render.DrawString(new Vector2(100, 185), $"Local Client: {Functions.Version.CheckClientVersion()}");
-            Render.DrawString(new Vector2(100, 200), $"Build: {Settings.Version}");
+            Render.DrawString(new Vector2(100, 270), "Sinmai-Internal-Damage");
+            Render.DrawString(new Vector2(100, 300), $"Build: {Settings.Version}");
 
             // Call Functions in Functions
             // what the fuck is this named

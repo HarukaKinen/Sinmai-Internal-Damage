@@ -2,7 +2,7 @@
 {
     class Settings
     {
-        public static string Version = "b20220407-B";
+        public static string Version = "b20220407-D";
 
         public static int MainToolbarInt = 0;
         public static string[] MainToolbarStrings = { "Legit", "Skins", "Misc" };
