@@ -17,10 +17,12 @@ Thanks to my pro internal game hack developer friend for helping me with this.
 - 21000
 - 21500
 - 22000
-- 22500 (Not tested)
+- 22500
+- 23000 (Not tested)
 
 ### Tested
 - SDEZ (maimai でらっくす)
+  - 1.25 (UNiVERSE PLUS)
   - 1.20 (UNiVERSE)
   - 1.17 (Splash PLUS)
   - 1.10 (Splash)
@@ -33,6 +35,7 @@ Thanks to my pro internal game hack developer friend for helping me with this.
 
 ### Technically feasible, but not Tested
 - SDEZ (maimai でらっくす)
+  - 1.30 (FESTiVAL)
   - 1.09 (無印 PLUS)
   - 1.00 (無印)
 - SDGA (maimai DX)
