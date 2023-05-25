@@ -33,9 +33,12 @@ Thanks to my pro internal game hack developer friend for helping me with this.
 
 ### Technically feasible, but not Tested
 - SDEZ (maimai でらっくす)
+- - 1.35 (FESTiVAL PLUS)
   - 1.30 (FESTiVAL)
   - 1.09 (無印 PLUS)
   - 1.00 (無印)
+- SDGB (舞萌DX)
+  - 1.30 (2023)
 - SDGA (maimai DX)
   - All versions
 
