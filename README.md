@@ -17,6 +17,7 @@ Thanks to my pro internal game hack developer friend for helping me with this.
 - 22000
 - 22500
 - 23000 (Not tested)
+- 23500 (Not tested)
 
 ### Tested
 - SDEZ (maimai でらっくす)
