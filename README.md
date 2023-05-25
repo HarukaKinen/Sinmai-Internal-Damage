@@ -16,7 +16,7 @@ Thanks to my pro internal game hack developer friend for helping me with this.
 - 21500
 - 22000
 - 22500
-- 23000 (Not tested)
+- 23000
 - 23500 (Not tested)
 
 ### Tested
