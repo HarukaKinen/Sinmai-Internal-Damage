@@ -21,12 +21,14 @@ Thanks to my pro internal game hack developer friend for helping me with this.
 
 ### Tested
 - SDEZ (maimai でらっくす)
+  - 1.35 (FESTiVAL PLUS)
   - 1.30 (FESTiVAL)
   - 1.25 (UNiVERSE PLUS)
   - 1.20 (UNiVERSE)
   - 1.17 (Splash PLUS)
   - 1.10 (Splash)
 - SDGB (舞萌DX)
+  - 1.30 (2023) 
   - 1.20 (2022)
   - 1.11 (2021)
   - 1.01 (无印)
@@ -35,11 +37,8 @@ Thanks to my pro internal game hack developer friend for helping me with this.
 
 ### Technically feasible, but not Tested
 - SDEZ (maimai でらっくす)
-  - 1.35 (FESTiVAL PLUS)
   - 1.09 (無印 PLUS)
   - 1.00 (無印)
-- SDGB (舞萌DX)
-  - 1.30 (2023)
 - SDGA (maimai DX)
   - All versions
 
@@ -68,7 +67,7 @@ Thanks to my pro internal game hack developer friend for helping me with this.
 - MiniMe (unknown SDEZ fork)
 - Aqua Server 0.0.18 above
 
-### non-Tested but possible undetected
+### non-Tested but possibly undetected
 
 - SEGA ALL.Net (Amusement Linkage Live Network)
 
